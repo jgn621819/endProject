@@ -15,13 +15,13 @@ import java.util.List;
 public class SpringBootAllApplicationTests {
     @Autowired
     PersonMapper personMapper;
+
     @Test
     public void test1() {
         List<Person> people = personMapper.selectAll();
         for (Person person : people) {
             System.out.println(person);
         }
-
 
 
     }

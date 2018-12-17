@@ -11,6 +11,7 @@ public class SpringBootAllApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootAllApplication.class, args);
         System.out.println("i am the master jgn");
+        System.out.println("who are you?");
     }
 
 }

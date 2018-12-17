@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -17,9 +16,9 @@ public class PersonController {
     PersonMapper personMapper;
 
     @RequestMapping("queryAll")
-    public String queryAll(Model model){
+    public String queryAll(Model model) {
         List<Person> people = personMapper.selectAll();
-        model.addAttribute("people",people);
+        model.addAttribute("people", people);
         for (Person person : people) {
             System.out.println(person);
         }
